@@ -8,6 +8,13 @@ gem "rails", "~> 7.1.3", ">= 7.1.3.2"
 #For Password
 gem 'bcrypt'
 
+#Faker Gem
+gem 'faker'
+
+gem 'will_paginate', '~> 3.1', '>= 3.1.6' 
+
+gem 'bootstrap-will_paginate'
+
 #Bootstrap framework and CSS
 gem "bootstrap-sass"
 
