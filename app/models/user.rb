@@ -11,6 +11,7 @@ class User < ApplicationRecord
   attr_accessor :remember_token, :activation_token
   before_save :downcase_email
   before_create :create_activation_digest
+  has_many :active_relationship, class_name: "Relatioship", foreign_key: "follower_id",dependent: :destroy
 
   # Returns the hash digest of the given string.
   def self.digest(string)
